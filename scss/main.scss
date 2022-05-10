@@ -54,7 +54,7 @@
 .map__point-two {
 	opacity: 0;
 	animation: fadeIn , fadeShadow;
-	animation-delay: 2s , 2s;
+	animation-delay: 1.5s , 1.5s;
 	animation-duration: 1s , 2s;
 	animation-fill-mode: forwards , backwards;
 	animation-timing-function: linear , ease-in-out;
@@ -62,7 +62,7 @@
 .map__point-three {
 	opacity: 0;
 	animation: fadeIn , fadeShadow;
-	animation-delay: 3s , 3s;
+	animation-delay: 2s , 2s;
 	animation-duration: 1s , 2s;
 	animation-fill-mode: forwards , backwards;
 	animation-timing-function: linear , ease-in-out;
@@ -70,7 +70,7 @@
 .map__point-four {
 	opacity: 0;
 	animation: fadeIn , fadeShadow;
-	animation-delay: 4s , 4s;
+	animation-delay: 2.5s , 2.5s;
 	animation-duration: 1s , 2s;
 	animation-fill-mode: forwards , backwards;
 	animation-timing-function: linear , ease-in-out;
@@ -78,7 +78,7 @@
 .map__current-location {
 	opacity: 0;
 	animation: backInLeft;
-	animation-delay: 4s;
+	animation-delay: 3s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
@@ -86,7 +86,7 @@
 .map__point-five {
 	opacity: 0;
 	animation: fadeIn , fadeShadow;
-	animation-delay: 5s , 5s;
+	animation-delay: 3.5s , 3.5s;
 	animation-duration: 1s , 2s;
 	animation-fill-mode: forwards , backwards;
 	animation-timing-function: linear , ease-in-out;
@@ -94,7 +94,7 @@
 .map__west-location {
 	opacity: 0;
 	animation: backInLeft;
-	animation-delay: 5s;
+	animation-delay: 4s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
@@ -102,7 +102,7 @@
 .line-animation {
 	stroke-dasharray: 600;
 	// stroke-dashoffset: 600;
-	animation: roadTo 3s linear 6s backwards;
+	animation: roadTo 2s linear 4s backwards;
 }
 
 
