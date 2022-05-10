@@ -484,8 +484,8 @@ input[type=number] {
   opacity: 0;
   -webkit-animation: fadeIn , fadeShadow;
           animation: fadeIn , fadeShadow;
-  -webkit-animation-delay: 2s , 2s;
-          animation-delay: 2s , 2s;
+  -webkit-animation-delay: 1.5s , 1.5s;
+          animation-delay: 1.5s , 1.5s;
   -webkit-animation-duration: 1s , 2s;
           animation-duration: 1s , 2s;
   -webkit-animation-fill-mode: forwards , backwards;
@@ -498,8 +498,8 @@ input[type=number] {
   opacity: 0;
   -webkit-animation: fadeIn , fadeShadow;
           animation: fadeIn , fadeShadow;
-  -webkit-animation-delay: 3s , 3s;
-          animation-delay: 3s , 3s;
+  -webkit-animation-delay: 2s , 2s;
+          animation-delay: 2s , 2s;
   -webkit-animation-duration: 1s , 2s;
           animation-duration: 1s , 2s;
   -webkit-animation-fill-mode: forwards , backwards;
@@ -512,8 +512,8 @@ input[type=number] {
   opacity: 0;
   -webkit-animation: fadeIn , fadeShadow;
           animation: fadeIn , fadeShadow;
-  -webkit-animation-delay: 4s , 4s;
-          animation-delay: 4s , 4s;
+  -webkit-animation-delay: 2.5s , 2.5s;
+          animation-delay: 2.5s , 2.5s;
   -webkit-animation-duration: 1s , 2s;
           animation-duration: 1s , 2s;
   -webkit-animation-fill-mode: forwards , backwards;
@@ -523,6 +523,34 @@ input[type=number] {
 }
 
 .map__current-location {
+  opacity: 0;
+  -webkit-animation: backInLeft;
+          animation: backInLeft;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.map__point-five {
+  opacity: 0;
+  -webkit-animation: fadeIn , fadeShadow;
+          animation: fadeIn , fadeShadow;
+  -webkit-animation-delay: 3.5s , 3.5s;
+          animation-delay: 3.5s , 3.5s;
+  -webkit-animation-duration: 1s , 2s;
+          animation-duration: 1s , 2s;
+  -webkit-animation-fill-mode: forwards , backwards;
+          animation-fill-mode: forwards , backwards;
+  -webkit-animation-timing-function: linear , ease-in-out;
+          animation-timing-function: linear , ease-in-out;
+}
+
+.map__west-location {
   opacity: 0;
   -webkit-animation: backInLeft;
           animation: backInLeft;
@@ -536,38 +564,10 @@ input[type=number] {
           animation-timing-function: ease-in-out;
 }
 
-.map__point-five {
-  opacity: 0;
-  -webkit-animation: fadeIn , fadeShadow;
-          animation: fadeIn , fadeShadow;
-  -webkit-animation-delay: 5s , 5s;
-          animation-delay: 5s , 5s;
-  -webkit-animation-duration: 1s , 2s;
-          animation-duration: 1s , 2s;
-  -webkit-animation-fill-mode: forwards , backwards;
-          animation-fill-mode: forwards , backwards;
-  -webkit-animation-timing-function: linear , ease-in-out;
-          animation-timing-function: linear , ease-in-out;
-}
-
-.map__west-location {
-  opacity: 0;
-  -webkit-animation: backInLeft;
-          animation: backInLeft;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
 .line-animation {
   stroke-dasharray: 600;
-  -webkit-animation: roadTo 3s linear 6s backwards;
-          animation: roadTo 3s linear 6s backwards;
+  -webkit-animation: roadTo 2s linear 4s backwards;
+          animation: roadTo 2s linear 4s backwards;
 }
 
 .header__aside {
