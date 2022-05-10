@@ -1,0 +1,78 @@
+$green: #4Af6CD;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Keyframes
+@keyframes fadeInDownArrow {
+	0%,100%
+	{
+		opacity:0;
+		bottom: 60px
+	}
+	50%
+	{
+		opacity:1;
+		bottom: 30px
+	}
+}
+
+
+@keyframes fadeShadow {
+	0%,100%
+	{
+		filter: drop-shadow(0 0 0px transparent);
+	}
+	50% {
+		filter: drop-shadow(0 0 3px $green);
+	}
+}
+
+
+@keyframes fadeIn {
+	0%
+	{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@keyframes roadTo {
+	0%
+	{
+		stroke-dashoffset: 600;
+	}
+	100% 
+	{
+		stroke-dashoffset: 0;
+	}
+
+}
+
+@keyframes backInLeft {
+	0%
+	{
+		opacity: 0;
+		transform: translateX(-10px);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateX(0px);
+		
+	}
+}
