@@ -453,6 +453,7 @@ input[type=number] {
   left: 210px;
   bottom: 40px;
   z-index: 10;
+  pointer-events: none;
   -webkit-animation: fadeInDownArrow 2s infinite;
           animation: fadeInDownArrow 2s infinite;
   -webkit-animation-timing-function: cubic-bezier(easeInOutQuint);
@@ -578,6 +579,20 @@ input[type=number] {
   border-right: 1px solid rgba(255, 255, 255, 0.25);
   height: 100vh;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__aside-logo img {
+  width: 100px;
 }
 
 .header__aside .menu {
@@ -615,7 +630,9 @@ input[type=number] {
   display: inline-block;
   position: relative;
   padding-left: 19px;
-  margin-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 5px;
   text-transform: capitalize;
 }
 
@@ -656,6 +673,10 @@ input[type=number] {
   font-weight: 800;
   line-height: 46px;
   margin-bottom: 18px;
+}
+
+.slider-item__info .slider-item__info-link {
+  pointer-events: none;
 }
 
 .section__surf {
@@ -838,6 +859,7 @@ input[type=number] {
 
 .slider-map-dots.slick-current .slider-map-dots__content-link {
   padding-top: 4px;
+  pointer-events: none;
 }
 
 .slider-map-dots.slick-current .slider-map-dots__content-item {
@@ -1920,6 +1942,13 @@ input[type=number] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: auto;
+        -ms-flex-pack: auto;
+            justify-content: auto;
   }
   .header__aside-logo {
     -ms-flex-item-align: baseline;
@@ -1940,6 +1969,11 @@ input[type=number] {
   }
   .header__aside .menu .menu__list a {
     padding: 15px;
+  }
+  .header__aside-location {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0;
   }
   .header__aside-search {
     padding: 15px;
@@ -1988,7 +2022,7 @@ input[type=number] {
     padding: 120px 0 0 0;
   }
   .section__sleep {
-    padding: 0px 0 160px 0;
+    padding: 50px 0 160px 0;
   }
   .section__shop .shop__slider {
     padding-left: 0;

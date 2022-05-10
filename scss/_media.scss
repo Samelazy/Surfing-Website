@@ -100,6 +100,7 @@
 	}
 }
 @media (max-width: 1366px) {
+
 	.header__aside {
 		height: 108px;
 		padding-right: 25px;
@@ -109,6 +110,8 @@
 		display: flex;
 		border-right: none;
 		align-items: center;
+		flex-direction: row;
+		justify-content: auto;
 		&-logo {
 			align-self: baseline;
 		}
@@ -127,6 +130,11 @@
 					padding: 15px;
 				}
 			}
+		}
+		&-location {
+			margin-top: 5px;
+			margin-bottom: 0px;
+			margin-left: 0;
 		}
 	}
 
@@ -181,7 +189,7 @@
 		padding: 120px 0 0 0 ;
 	}
 	.section__sleep {
-		padding: 0px 0 160px 0;
+		padding: 50px 0 160px 0;
 	}
 	.section__shop .shop__slider {
 		padding-left: 0;

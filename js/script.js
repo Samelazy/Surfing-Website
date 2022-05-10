@@ -1,6 +1,12 @@
 $(document).ready(function () {
+
+	// Инициализация WOW скрипта для анимаций при скролле
 	new WOW().init();
 
+	// Запрет автоповорота экрана
+	screen.orientation.lock('portrait');
+
+	// Инициализация слайдеров 
 	$('.header__slider').slick({
 		infinite: true,
 		fade: true,
@@ -8,6 +14,7 @@ $(document).ready(function () {
 		nextArrow: $('.slick-next'),
 		asNavFor: '.slider-dots',
 	});
+
 	$('.slider-dots').slick({
 		slidesToShow: 4,
 		slidesToScroll: 4,
@@ -44,6 +51,7 @@ $(document).ready(function () {
 			}
 		]
 	});
+
 	$('.slider-map').slick({
 		slidesToShow: 8,
 		slidesToScroll: 1,
@@ -51,18 +59,21 @@ $(document).ready(function () {
 		asNavFor: '.surf__slider , .travel__slider',
 		focusOnSelect: true,
 	});
+
 	$('.travel__slider').slick({
 		prevArrow: $('.travel__slick-prev'),
 		nextArrow: $('.travel__slick-next'),
 		fade: true,
 		asNavFor: '.surf__slider , .slider-map',
 	});
+
 	$('.sleep__slider').slick({
 		prevArrow: $('.holder__slick-prev'),
 		nextArrow: $('.holder__slick-next'),
 		fade: true,
 		// asNavFor: '.surf__slider , .slider-map',
 	});
+
 	$('.shop__slider').slick({
 		prevArrow: $('.shop__slick-prev'),
 		nextArrow: $('.shop__slick-next'),
@@ -73,13 +84,13 @@ $(document).ready(function () {
 	const nav = document.querySelector('.nav');
 	const navMenu = document.querySelector('.menu');
 	const menuBtnActive = document.querySelector('.menu-btn');
-	nav.addEventListener('click', (event) => {
+	menuBtnActive.addEventListener('click', (event) => {
 		nav.classList.toggle('open');
 		navMenu.classList.toggle('activeMenu');
 		menuBtnActive.classList.toggle('menuBtnActive');
 	});
 
-
+	// Вывод активным слайд вторым - изменяет паддинг в зависимости от ширины слайда
 	let mediaQueryWidth = window.matchMedia('(min-width: 700px)');
 	if (mediaQueryWidth.matches && $(window).resize(function () { $(window).width() > 700 })) {
 		const parentTrack = document.querySelector('.surf__slider');
@@ -114,6 +125,7 @@ $(document).ready(function () {
 
 	const sleepSlider = document.querySelector('.section__sleep');
 
+	// Подсчет цены за гостей и ночи в отеле при загрузке страницы
 	function calculatingPrice() {
 		const slickCurrent = sleepSlider.querySelector('.slick-current');
 		const priceParent = slickCurrent.querySelector('.holder-slider__info');
@@ -130,6 +142,7 @@ $(document).ready(function () {
 		price.value = parseInt(totalPrice);
 	}
 	calculatingPrice()
+
 	// Изменение числа при клике на + и -
 	sleepSlider.addEventListener('click', function (event) {
 		let counter;
@@ -151,6 +164,7 @@ $(document).ready(function () {
 			if (event.target.dataset.action === "minus" && parseInt(counterValue) > minValue) {
 				counter.value = --counter.value
 			}
+			// Подсчет цены за гостей и ночи в отеле при изменении кол-ва гостей или ночей
 			calculatingPrice()
 		}
 	})

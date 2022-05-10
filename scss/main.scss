@@ -30,6 +30,7 @@
 		position: absolute;
 		left: 210px; bottom: 40px;
 		z-index: 10;
+		pointer-events: none;
 		animation: fadeInDownArrow 2s infinite;
 		animation-timing-function: cubic-bezier(easeInOutQuint);
 	}
@@ -116,6 +117,14 @@
 	border-right: 1px solid rgba(#fff, .25);
 	height: 100vh;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&-logo {
+		img {
+			width: 100px;
+		}
+	}
 	.menu {
 		margin-top: 40px;
 		&__list {
@@ -145,7 +154,9 @@
 		display: inline-block;
 		position: relative;
 		padding-left: 19px;
-		margin-top: 30px;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		margin-left: 5px;
 		text-transform: capitalize;
 		&::before {
 			content: "";
@@ -180,7 +191,9 @@
 		line-height: 46px;
 		margin-bottom: 18px;
 	}
-	
+	.slider-item__info-link {
+		pointer-events: none;
+	}
 }
 
 // Surf
@@ -324,6 +337,7 @@
 		}
 		&-link {
 			padding-top: 4px;
+			pointer-events: none;
 		}
 		&-item {
 			text-align: center;
