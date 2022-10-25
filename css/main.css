@@ -1133,6 +1133,10 @@ input[type=number] {
   text-shadow: 0 0 1px;
 }
 
+.section__sleep .regulators-wrapper li:hover {
+  cursor: pointer;
+}
+
 .section__sleep .description-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1428,6 +1432,10 @@ input[type=number] {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+
+.slick__arrows-container button:hover {
+  cursor: pointer;
 }
 
 .translucent__arrows-container {

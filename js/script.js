@@ -3,9 +3,6 @@ $(document).ready(function () {
 	// Инициализация WOW скрипта для анимаций при скролле
 	new WOW().init();
 
-	// Запрет автоповорота экрана
-	screen.orientation.lock('portrait');
-
 	// Инициализация слайдеров 
 	$('.header__slider').slick({
 		infinite: true,
@@ -99,7 +96,6 @@ $(document).ready(function () {
 			childTrackWidth = childTrackStyle.getPropertyValue('width');
 		let slickTrackPadding = parentTrack.querySelector('.slick-track');
 		slickTrackPadding.style.paddingLeft = childTrackWidth;
-		console.log($(window).width());
 	}
 
 
